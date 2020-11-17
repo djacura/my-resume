@@ -258,3 +258,15 @@ footer {
     position: relative;
     width: 60%;
 }
+
+/* -- skills -- */
+
+.progress {
+    position: relative;
+    height: 30px;
+    margin-bottom: 4px;
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
