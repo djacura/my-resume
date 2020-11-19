@@ -49,8 +49,6 @@ img {
   max-width: 100%;
 }
 
-
-
 /* page structure */
 
 #search-area {
@@ -159,7 +157,6 @@ img {
 /* input field */
 
 #gh-username {
-  display: block;
   padding: 5px 8px;
   font-size: 1.4em;
   color: #666;
