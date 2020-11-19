@@ -11,6 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/github-information.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_NZgGXoAacuWnQGAZ7IvhV");
+        })();
+    </script>
     <title>Daryl</title>
 </head>
 <body>
@@ -61,10 +69,10 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" 
                             placeholder="Name" required/>
-                        <input type="email" name="email" id="emailaddress" class="form-control" 
+                        <input type="email" name="emailaddress" id="emailaddress" class="form-control" 
                             placeholder="Email" required/>
                         <textarea name="projectsummary" id="projectsummary" rows="5" class="form-control"
                             placeholder="Project Description" required></textarea>
@@ -135,5 +143,6 @@
         </div>
     
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
